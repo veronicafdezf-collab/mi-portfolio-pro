@@ -79,7 +79,7 @@ export default function App() {
 
         {/* SECCIÓN CONOCIMIENTOS TÉCNICOS */}
         <section className="mb-8">
-          <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <h3 className="text-lg font-bold text-amber-800 mb-4 flex items-center gap-2">
             <span className="text-emerald-400">#</span> Conocimientos Técnicos
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
