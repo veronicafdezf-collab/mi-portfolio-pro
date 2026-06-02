@@ -1,21 +1,20 @@
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0d1117] text-gray-300 font-sans antialiased pb-12">
-      {/* CABECERA HERO */}
-      <header className="relative w-full h-48 md:h-64 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 flex flex-col items-center justify-center text-center px-4 border-b border-gray-800">
-        <h1 className="text-2xl md:text-5xl font-extrabold text-white tracking-tight mb-2">
-          DevOps & Cloud Engineer
-        </h1>
-        <p className="text-blue-400 text-xs md:text-sm tracking-widest uppercase font-mono">
-          CI/CD • Containers • Kubernetes • Infrastructure as Code
-        </p>
-      </header>
-
+<div className="min-h-screen bg-slate-50 text-slate-800 font-sans antialiased pb-12">
+    {/* CABECERA HERO */}
+    <header className="relative w-full h-48 md:h-64 bg-gradient-to-r from-slate-200 via-blue-100 to-slate-200 flex flex-col justify-center px-6 md:px-12 rounded-b-2xl shadow-sm">
+      <h1 className="text-2xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-2">
+        DevOps & Cloud Engineer
+      </h1>
+      <p className="text-blue-600 text-xs md:text-sm tracking-widest uppercase font-mono">
+        CI/CD • Containers • Kubernetes • Infrastructure as Code
+      </p>
+    </header>
       {/* CUERPO PRINCIPAL */}
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-14 relative z-10">
         
         {/* TARJETA DE PERFIL */}
-        <section className="bg-[#161b22] rounded-xl border border-gray-800 p-6 relative shadow-xl mb-8">
+        <section className="bg-white rounded-xl border border-slate-200 p-6 relative shadow-md mb-8">
           {/* Avatar / Badge */}
 {/*/* Avatar / Badge */}
 <div className="absolute -top-12 left-6">
