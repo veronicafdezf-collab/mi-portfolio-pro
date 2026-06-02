@@ -17,12 +17,16 @@ export default function App() {
         {/* TARJETA DE PERFIL */}
         <section className="bg-[#161b22] rounded-xl border border-gray-800 p-6 relative shadow-xl mb-8">
           {/* Avatar / Badge */}
-          <div className="absolute -top-12 left-6 md:left-8">
-            <div className="w-24 h-24 rounded-full border-4 border-[#161b22] bg-zinc-800 ring-2 ring-emerald-400 flex items-center justify-center font-mono font-bold text-white text-sm shadow-lg">
-              DevOps
-            </div>
-          </div>
-
+{/*/* Avatar / Badge */}
+<div className="absolute -top-12 left-6">
+  <div className="w-24 h-24 rounded-full border-4 border-teal-400 overflow-hidden bg-zinc-800 flex items-center justify-center">
+    <img 
+      src="/perfil.jpeg" 
+      alt="Foto de perfil de Verónica" 
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
           {/* Información de Perfil */}
           <div className="pt-12 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
             <div className="space-y-3 flex-1">
