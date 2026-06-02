@@ -103,7 +103,7 @@ export default function App() {
         </section>
 
         {/* SECCIÓN PROYECTOS */}
-        <section className="mb-12">
+        <section className="mb-8">
           <h3 className="text-lg font-bold text-stone-800 mb-4 flex items-center gap-2">
             <span className="text-xl font-bold text-stone-800 mb-6">#</span> Proyectos Destacados
           </h3>
