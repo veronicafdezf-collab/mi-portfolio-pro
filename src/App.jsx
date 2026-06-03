@@ -102,13 +102,13 @@ export default function App() {
           </div>
         </section>
 
-        {/* SECCIÓN PROYECTOS */}
+{/* SECCIÓN PROYECTOS */}
         <section className="mb-4">
           <h3 className="text-lg font-bold text-amber-900 mb-4 flex items-center gap-2">
             <span className="text-amber-700">#</span> Proyectos Destacados
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Proyecto 1 */}
+{/* Proyecto 1 */}
             <div className="bg-[#161b22] border border-gray-800 rounded-xl overflow-hidden flex flex-col h-full">
               <div className="p-5 space-y-3 flex-1">
                 <span className="inline-block bg-purple-500/10 text-purple-400 text-[10px] font-mono px-2 py-0.5 rounded border border-purple-500/20">
@@ -116,8 +116,13 @@ export default function App() {
                 </span>
                 <h4 className="text-base font-bold text-white">Proyecto Kubernetes: Contador Web</h4>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Despliegue integral de una arquitectura de microservicios con un contador web en Node.js y base de datos Redis. Configuración de Pods, Deployments y Services para garantizar alta disponibilidad y balanceo de carga.
+                  Despliegue integral de una arquitectura de microservicios con un contador web en Node.js y base de datos Redis.
                 </p>
+                {/* BOTONES DE ACCIÓN */}
+                <div className="flex gap-3 pt-2">
+                  <a href="URL_GITHUB_PROYECTO_1" target="_blank" rel="noreferrer" className="text-[10px] font-bold text-blue-400 hover:text-blue-300 border-b border-blue-400/30">Source Code</a>
+                  <a href="URL_VERCEL_PROYECTO_1" target="_blank" rel="noreferrer" className="text-[10px] font-bold text-emerald-400 hover:text-emerald-300 border-b border-emerald-400/30">Live Demo</a>
+                </div>
               </div>
               <div className="p-4 pt-0 flex flex-wrap gap-1.5 border-t border-gray-800/50 mt-auto bg-black/10">
                 <span className="bg-zinc-800 text-zinc-300 text-[10px] font-mono px-2 py-0.5 rounded">K8s</span>
@@ -125,26 +130,30 @@ export default function App() {
                 <span className="bg-zinc-800 text-zinc-300 text-[10px] font-mono px-2 py-0.5 rounded">Node.js</span>
               </div>
             </div>
-
-            {/* Proyecto 2 */}
+{/* Proyecto 2 */}
             <div className="bg-[#161b22] border border-gray-800 rounded-xl overflow-hidden flex flex-col h-full">
               <div className="p-5 space-y-3 flex-1">
                 <span className="inline-block bg-purple-500/10 text-purple-400 text-[10px] font-mono px-2 py-0.5 rounded border border-purple-500/20">
                   CI/CD • GitHub Actions
                 </span>
-                <h4 className="text-base font-bold text-white">Pipeline de CI/CD Automático en la Nube</h4>
+                <h4 className="text-base font-bold text-white">Pipeline de CI/CD Automático</h4>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Próximo hito: Configuración de flujos automatizados con GitHub Actions para compilar y subir imágenes a un registro de contenedores de forma segura ante cada cambio de código.
+                  Configuración de flujos automatizados con GitHub Actions para compilar y subir imágenes a un registro de contenedores.
                 </p>
+                {/* BOTONES DE ACCIÓN */}
+                <div className="flex gap-3 pt-2">
+                  <a href="URL_GITHUB_PROYECTO_2" target="_blank" rel="noreferrer" className="text-[10px] font-bold text-blue-400 hover:text-blue-300 border-b border-blue-400/30">Source Code</a>
+                  <a href="URL_VERCEL_PROYECTO_2" target="_blank" rel="noreferrer" className="text-[10px] font-bold text-emerald-400 hover:text-emerald-300 border-b border-emerald-400/30">Live Demo</a>
+                </div>
               </div>
               <div className="p-4 pt-0 flex flex-wrap gap-1.5 border-t border-gray-800/50 mt-auto bg-black/10">
                 <span className="bg-zinc-800 text-zinc-300 text-[10px] font-mono px-2 py-0.5 rounded">CI/CD</span>
                 <span className="bg-zinc-800 text-zinc-300 text-[10px] font-mono px-2 py-0.5 rounded">Cloud</span>
               </div>
             </div>
+
           </div>
         </section>
-
         {/* PIE DE PÁGINA */}
         <footer className="w-full text-center py-6 text-gray-500 text-xs border-t border-gray-800 mt-12">
           © {new Date().getFullYear()} Verónica. Todos los derechos reservados.
