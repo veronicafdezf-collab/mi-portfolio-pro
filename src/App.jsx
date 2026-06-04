@@ -1,19 +1,26 @@
-import { useState } from 'react'; // 1. Importa useState arriba del todo
+import { useState } from 'react';
 
 export default function App() {
-  const [lang, setLang] = useState('ES'); // 2. Crea el estado
+  const [lang, setLang] = useState('ES');
 
   return (
-    <div className="min-h-screen ...">
-      {/* 3. El selector ahora cambia el estado */}
+    <div className="min-h-screen bg-[#f7f4ef] text-stone-800 font-sans antialiased pb-12">
+      {/* Selector de idioma */}
       <div className="language-selector">
-        <span onClick={() => setLang('ES')} style={{ color: lang === 'ES' ? 'blue' : 'black' }}>ES</span>
+        <span onClick={() => setLang('ES')} style={{ color: lang === 'ES' ? '#000' : '#a0a0a0', cursor: 'pointer' }}>ES</span>
         <span>|</span>
-        <span onClick={() => setLang('EN')} style={{ color: lang === 'EN' ? 'blue' : 'black' }}>EN</span>
+        <span onClick={() => setLang('EN')} style={{ color: lang === 'EN' ? '#000' : '#a0a0a0', cursor: 'pointer' }}>EN</span>
       </div>
-      
-      {/* 4. Aquí usarías la variable 'lang' para mostrar el contenido */}
-      <h1>{lang === 'ES' ? 'Hola' : 'Hello'}</h1>
+
+      {/* Aquí empieza tu Cabecera Hero */}
+      <header className="relative w-full h-48 md:h-64 bg-gradient-to-r from-[#eaddcf] via-[#f1eae1] to-[#eaddcf] flex flex-col justify-center px-4 md:px-8">
+        <h1 className="text-2xl md:text-5xl font-extrabold text-stone-900 tracking-tight mb-2">
+          {lang === 'ES' ? 'DevOps & Cloud Engineer' : 'DevOps & Cloud Engineer'}
+        </h1>
+        {/* ... resto de tu contenido ... */}
+      </header>
+
+      {/* Aquí sigue tu cuerpo principal */}
     </div>
   );
 }
