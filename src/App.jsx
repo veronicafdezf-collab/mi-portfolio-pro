@@ -136,10 +136,14 @@ export default function App() {
                 <span className="inline-block bg-purple-500/10 text-purple-400 text-[10px] font-mono px-2 py-0.5 rounded border border-purple-500/20">
                   CI/CD • GitHub Actions
                 </span>
-                <h4 className="text-base font-bold text-white">Pipeline de CI/CD Automático</h4>
-                <p className="text-xs text-gray-400 leading-relaxed">
-                  Configuración de flujos automatizados con GitHub Actions para compilar y subir imágenes a un registro de contenedores.
-                </p>
+// Busca tu componente y cambia el texto:
+<h4 className="text-base font-bold text-white">
+  Pipeline de CI/CD Automático / Automated CI/CD Pipeline
+</h4>
+<p className="text-xs text-gray-400 leading-relaxed">
+  Configuración de flujos automatizados con GitHub Actions. / 
+  Configuration of automated workflows using GitHub Actions.
+</p>
                 {/* BOTONES DE ACCIÓN */}
                 <div className="flex gap-3 pt-2">
                   <a href="https://github.com/veronica10-tech/mi-portfolio-pro" target="_blank" rel="noreferrer" className="text-[10px] font-bold text-blue-400 hover:text-blue-300 border-b border-blue-400/30">Source Code</a>
