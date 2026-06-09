@@ -58,18 +58,24 @@ export default function App() {
   </div>
 </section>
 
-{/* SECCIÓN SKILLS */}
-        <section id="skills" className="mb-12">
-          <h3 className="text-xl font-bold text-amber-900 mb-6">Skills</h3>
-          <div className="flex flex-wrap gap-3">
-            {['Docker', 'Kubernetes', 'Azure', 'Terraform', 'AWS', 'GitHub Actions', 'Python', 'Linux', 'Prometheus'].map((skill) => (
-              <span key={skill} className="px-3 py-1 bg-stone-200 text-stone-800 text-xs font-semibold rounded-full hover:bg-stone-300 transition cursor-default">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </section>
-                
+<section id="skills" className="mb-12">
+  <h3 className="text-xl font-bold text-amber-900 mb-6">Skills</h3>
+  
+  {/* Grid para que las tarjetas se organicen en bloques */}
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    {['Docker', 'Kubernetes', 'Azure', 'Terraform', 'AWS', 'GitHub Actions', 'Python', 'Linux'].map((skill) => (
+      <div 
+        key={skill} 
+        className="h-32 flex items-center justify-center border-2 border-stone-200 bg-white rounded-xl shadow-sm transition-all duration-300 hover:border-amber-700 hover:shadow-lg hover:scale-105 cursor-pointer"
+      >
+        <span className="font-bold text-stone-700 text-center px-2">
+          {skill}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
+
         <section id="proyectos" className="mb-12">
           <h3 className="text-xl font-bold text-amber-900 mb-6">Proyectos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
