@@ -69,7 +69,7 @@ export default function App() {
             ))}
           </div>
         </section>
-        
+                
         <section id="proyectos" className="mb-12">
           <h3 className="text-xl font-bold text-amber-900 mb-6">Proyectos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
