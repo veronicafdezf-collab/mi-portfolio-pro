@@ -58,16 +58,16 @@ export default function App() {
   </div>
 </section>
 
-{/* SECCIÓN ENFOQUE - FONDO OSCURO COMPLETO */}
-<section id="enfoque" className="py-20 bg-[#0a192f] rounded-2xl p-8 mb-12 text-white">
+{/* SECCIÓN ENFOQUE - FONDO BEIGE CON TARJETAS CONTRASTADAS */}
+<section id="enfoque" className="py-20 bg-[#fdfbf7] rounded-2xl p-8 mb-12 text-stone-900">
   
   <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
     
     {/* Columna Izquierda: Texto */}
     <div className="lg:w-1/3">
-      <h3 className="text-sm font-bold text-amber-500 uppercase tracking-widest mb-4">Enfoque</h3>
+      <h3 className="text-sm font-bold text-amber-800 uppercase tracking-widest mb-4">Enfoque</h3>
       <h2 className="text-4xl font-bold mb-6">Cultura GitOps y Automatización End-to-End</h2>
-      <p className="text-stone-400 leading-relaxed">
+      <p className="text-stone-700 leading-relaxed">
         Como DevOps Engineer, mi enfoque consiste en erradicar los procesos manuales y asegurar la reproducibilidad de los entornos productivos.
       </p>
     </div>
@@ -79,11 +79,11 @@ export default function App() {
         { title: "Orquestación y Resiliencia", desc: "Administración avanzada de clústeres Kubernetes: gestión de namespaces...", icon: "🚀" },
         { title: "Seguridad e Inmutabilidad", desc: "Aislamiento de red (VPC), automatización con Terraform y abstracción...", icon: "🛡️" }
       ].map((item, i) => (
-        <div key={i} className="bg-[#112240] p-8 rounded-xl border border-stone-700 hover:border-amber-500 transition-all duration-300 cursor-pointer flex items-start gap-6 group">
+        <div key={i} className="bg-[#f0ece5] p-8 rounded-xl border border-stone-300 hover:border-amber-700 transition-all duration-300 cursor-pointer flex items-start gap-6 group">
           <div className="text-3xl">{item.icon}</div>
           <div>
-            <h4 className="font-bold text-xl mb-2 group-hover:text-amber-400">{item.title}</h4>
-            <p className="text-sm text-stone-400">{item.desc}</p>
+            <h4 className="font-bold text-xl mb-2 group-hover:text-amber-800">{item.title}</h4>
+            <p className="text-sm text-stone-600">{item.desc}</p>
           </div>
         </div>
       ))}
