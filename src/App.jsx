@@ -58,37 +58,36 @@ export default function App() {
   </div>
 </section>
 
-<section id="enfoque" className="mb-12">
-  <h3 className="text-xl font-bold text-amber-900 mb-6">Enfoque Profesional</h3>
-  <div className="grid grid-cols-1 gap-4">
-    {[
-      { 
-        title: "Estrategias de Branching y CI/CD", 
-        desc: "Diseño de pipelines con disparadores automatizados basados en ramas Feature y GitFlow, controlando la compilación, testing y versionado dinámico.",
-        icon: "⚙️" 
-      },
-      { 
-        title: "Orquestación y Resiliencia", 
-        desc: "Administración avanzada de clústeres Kubernetes: gestión de namespaces, deployments, configuración de Ingress, certificados SSL y troubleshooting con k9s.",
-        icon: "🚀" 
-      },
-      { 
-        title: "Seguridad e Inmutabilidad", 
-        desc: "Aislamiento de red (VPC), automatización con Terraform y abstracción de credenciales críticas mediante inyección dinámica de Kubernetes Secrets.",
-        icon: "🛡️" 
-      }
-    ].map((item, index) => (
-      <div 
-        key={index}
-        className="flex items-start p-6 bg-[#0a192f] border border-stone-800 rounded-xl transition-all duration-300 hover:border-amber-600 hover:bg-[#112240] cursor-pointer group"
-      >
-        <div className="text-3xl mr-6 mt-1 group-hover:scale-110 transition-transform">{item.icon}</div>
-        <div>
-          <h4 className="text-lg font-bold text-white mb-2">{item.title}</h4>
-          <p className="text-sm text-stone-400 leading-relaxed">{item.desc}</p>
+{/* SECCIÓN ENFOQUE - FONDO OSCURO COMPLETO */}
+<section id="enfoque" className="py-20 bg-[#0a192f] rounded-2xl p-8 mb-12 text-white">
+  
+  <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
+    
+    {/* Columna Izquierda: Texto */}
+    <div className="lg:w-1/3">
+      <h3 className="text-sm font-bold text-amber-500 uppercase tracking-widest mb-4">Enfoque</h3>
+      <h2 className="text-4xl font-bold mb-6">Cultura GitOps y Automatización End-to-End</h2>
+      <p className="text-stone-400 leading-relaxed">
+        Como DevOps Engineer, mi enfoque consiste en erradicar los procesos manuales y asegurar la reproducibilidad de los entornos productivos.
+      </p>
+    </div>
+
+    {/* Columna Derecha: Tarjetas */}
+    <div className="lg:w-2/3 flex flex-col gap-6">
+      {[
+        { title: "Estrategias de Branching y CI/CD", desc: "Diseño de pipelines con disparadores automatizados basados en ramas Feature y GitFlow...", icon: "⚙️" },
+        { title: "Orquestación y Resiliencia", desc: "Administración avanzada de clústeres Kubernetes: gestión de namespaces...", icon: "🚀" },
+        { title: "Seguridad e Inmutabilidad", desc: "Aislamiento de red (VPC), automatización con Terraform y abstracción...", icon: "🛡️" }
+      ].map((item, i) => (
+        <div key={i} className="bg-[#112240] p-8 rounded-xl border border-stone-700 hover:border-amber-500 transition-all duration-300 cursor-pointer flex items-start gap-6 group">
+          <div className="text-3xl">{item.icon}</div>
+          <div>
+            <h4 className="font-bold text-xl mb-2 group-hover:text-amber-400">{item.title}</h4>
+            <p className="text-sm text-stone-400">{item.desc}</p>
+          </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
 </section>
         <section id="proyectos" className="mb-12">
