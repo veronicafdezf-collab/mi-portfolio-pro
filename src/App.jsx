@@ -123,16 +123,18 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
     })}
   </div>
 </section>
-
-        <section id="proyectos" className="mb-12">
+<section id="proyectos" className="mb-12">
           <h3 className="text-xl font-bold text-amber-900 mb-6">Proyectos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white">
-              Contador Web (K8s)
+              <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" rel="noopener noreferrer">
+                <div className="font-bold text-lg">Contador Web (K8s)</div>
+                <div className="text-sm">Tecnologias: Kubernetes, Docker, GitHub Actions (CI/CD).</div>
+              </a>
             </div>
           </div>
         </section>
-
+        
         <section id="contacto" className="mb-12 p-8 text-center bg-stone-200 rounded-xl">
           <h3 className="text-xl font-bold text-stone-900 mb-4">Contacto</h3>
           <a href="mailto:veronicafdezf@gmail.com" className="text-amber-800 font-bold hover:underline">
@@ -140,9 +142,10 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
           </a>
         </section>
         
-        <footer className="w-full text-center py-6 text-gray-500 text-xs border-t border-gray-800 mt-12">
+<footer className="w-full text-center py-6 text-gray-500 text-xs border-t border-gray-800 mt-12">
           © {new Date().getFullYear()} Verónica.
         </footer>
+        
       </main>
     </div>
   );
