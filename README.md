@@ -1,5 +1,7 @@
 # mi-portfolio-pro
 
+[![CI/CD Pipeline](https://github.com/veronicafdezf-collab/mi-portfolio-pro/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/veronicafdezf-collab/mi-portfolio-pro/actions/workflows/ci-cd.yml)
+
 [![Vercel Deployment Status](https://img.shields.io/badge/Vercel-Deployed-brightgreen)](https://mi-portfolio-pro.vercel.app/)
 
 ## 📝 Descripción / Description
