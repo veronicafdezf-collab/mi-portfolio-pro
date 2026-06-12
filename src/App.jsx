@@ -126,13 +126,12 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
 <section id="proyectos" className="mb-12">
           <h3 className="text-xl font-bold text-amber-900 mb-6">Proyectos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white">
-              <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" rel="noopener noreferrer">
-                <div className="font-bold text-lg">Contador Web (K8s)</div>
-                <div className="text-sm">Tecnologias: Kubernetes, Docker, GitHub Actions (CI/CD).</div>
-              </a>
-            </div>
-          </div>
+<div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white">
+  <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+    <div className="font-bold text-lg">Contador Web (K8s)</div>
+    <div className="text-sm">Tecnologias: Kubernetes, Docker, GitHub Actions (CI/CD).</div>
+  </a>
+</div>          </div>
         </section>
         
         <section id="contacto" className="mb-12 p-8 text-center bg-stone-200 rounded-xl">
