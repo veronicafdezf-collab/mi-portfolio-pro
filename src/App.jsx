@@ -123,7 +123,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
     })}
   </div>
 </section>
-<section id="proyectos" className="mb-12">
+<section id="mis proyectos" className="mb-12">
           <h3 className="text-xl font-bold text-amber-900 mb-6">Proyectos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white">
