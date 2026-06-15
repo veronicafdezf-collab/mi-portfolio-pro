@@ -42,7 +42,7 @@ export default function App() {
       </header>
 
       {/* CUERPO PRINCIPAL - Contiene todo el contenido */}
-<main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <section id="perfil" className="bg-[#faf9f6] rounded-xl border border-stone-200 p-6 -mt-8 shadow-md mb-8">
               <div className="absolute -top-16 left-1">
     <div className="w-24 h-24 rounded-full border-4 border-[#faf9f6] bg-stone-100 flex items-center justify-center overflow-hidden shadow-sm">
@@ -101,7 +101,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
   </div>
 </section>
 
-<section id="pipeline" className="py-16 bg-[#fdfbf7] rounded-2xl p-6 mb-12 border border-stone-200">
+<section id="pipeline" className="py-12 bg-[#fdfbf7] rounded-2xl p-6 mb-12 border border-stone-200">
   <div className="text-center mb-12">
     <h3 className="text-sm font-bold text-amber-800 uppercase tracking-widest mb-2">Demo Visual</h3>
     <h2 className="text-3xl font-bold text-stone-900">
@@ -140,7 +140,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
   </div>
 </section>
 
-<section id="skills" className="py-16">
+<section id="skills" className="py-12">
   <div className="text-center mb-12">
     <h3 className="text-sm font-bold text-amber-800 uppercase tracking-widest mb-2">Competencias</h3>
     <h2 className="text-3xl font-bold text-stone-900">Habilidades y herramientas críticas</h2>
@@ -210,7 +210,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
           </a>
         </section>
         
-<footer className="w-full text-center py-6 text-gray-500 text-xs border-t border-gray-800 mt-12">
+<footer className="w-full text-center py-4 text-gray-500 text-xs border-t border-gray-800 mt-12">
           © {new Date().getFullYear()} Verónica.
         </footer>
         
