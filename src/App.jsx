@@ -69,7 +69,7 @@ export default function App() {
 </section>
 
 {/* SECCIÓN ENFOQUE - FONDO BEIGE CON TARJETAS CONTRASTADAS */}
-<section id="enfoque" className="py-20 bg-[#fdfbf7] rounded-2xl p-8 mb-12 text-stone-900">
+<section id="enfoque" className="py-20 bg-[#fdfbf7] rounded-2xl p-6 mb-12 text-stone-900">
   
   <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
     
@@ -89,7 +89,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
         { title: "Orquestación y Resiliencia", desc: "Administración avanzada de clústeres Kubernetes: gestión de namespaces...", icon: "🚀" },
         { title: "Seguridad e Inmutabilidad", desc: "Aislamiento de red (VPC), automatización con Terraform y abstracción...", icon: "🛡️" }
       ].map((item, i) => (
-        <div key={i} className="bg-[#f0ece5] p-8 rounded-xl border border-stone-300 hover:border-amber-700 transition-all duration-300 cursor-pointer flex items-start gap-6 group">
+        <div key={i} className="bg-[#f0ece5] p-6 rounded-xl border border-stone-300 hover:border-amber-700 transition-all duration-300 cursor-pointer flex items-start gap-6 group">
           <div className="text-3xl">{item.icon}</div>
           <div>
             <h4 className="font-bold text-xl mb-2 group-hover:text-amber-800">{item.title}</h4>
@@ -101,7 +101,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
   </div>
 </section>
 
-<section id="pipeline" className="py-16 bg-[#fdfbf7] rounded-2xl p-8 mb-12 border border-stone-200">
+<section id="pipeline" className="py-16 bg-[#fdfbf7] rounded-2xl p-6 mb-12 border border-stone-200">
   <div className="text-center mb-12">
     <h3 className="text-sm font-bold text-amber-800 uppercase tracking-widest mb-2">Demo Visual</h3>
     <h2 className="text-3xl font-bold text-stone-900">
@@ -148,42 +148,42 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
     {/* Tarjeta 1 */}
-    <div className="bg-[#fdfbf7] p-6 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
+    <div className="bg-[#fdfbf7] p-4 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
       <div className="text-2xl mb-4">∞</div>
       <h4 className="font-bold text-lg mb-2">CI/CD & Branching</h4>
       <p className="text-sm text-stone-600">Diseño de pipelines con GitHub Actions, GitFlow y estrategias de despliegue continuo.</p>
     </div>
 
     {/* Tarjeta 2 */}
-    <div className="bg-[#fdfbf7] p-6 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
+    <div className="bg-[#fdfbf7] p-4 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
       <div className="text-2xl mb-4">☸️</div>
       <h4 className="font-bold text-lg mb-2">Orquestación (K8s)</h4>
       <p className="text-sm text-stone-600">Gestión de clústeres, despliegue de microservicios y administración de namespaces.</p>
     </div>
 
     {/* Tarjeta 3 */}
-    <div className="bg-[#fdfbf7] p-6 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
+    <div className="bg-[#fdfbf7] p-4 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
       <div className="text-2xl mb-4">☁️</div>
       <h4 className="font-bold text-lg mb-2">Cloud (Azure)</h4>
       <p className="text-sm text-stone-600">Aprovisionamiento de arquitectura en la nube, balanceadores y monitorización.</p>
     </div>
 
     {/* Tarjeta 4 */}
-    <div className="bg-[#fdfbf7] p-6 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
+    <div className="bg-[#fdfbf7] p-4 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
       <div className="text-2xl mb-4">⚡</div>
       <h4 className="font-bold text-lg mb-2">Infrastructure as Code</h4>
       <p className="text-sm text-stone-600">Desarrollo con Terraform para crear despliegues inmutables y reproducibles.</p>
     </div>
 
     {/* Tarjeta 5 */}
-    <div className="bg-[#fdfbf7] p-6 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
+    <div className="bg-[#fdfbf7] p-4 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
       <div className="text-2xl mb-4">🐧</div>
       <h4 className="font-bold text-lg mb-2">Scripting & Linux</h4>
       <p className="text-sm text-stone-600">Automatización de tareas complejas mediante Bash y desarrollo enfocado en Python.</p>
     </div>
 
     {/* Tarjeta 6 */}
-    <div className="bg-[#fdfbf7] p-6 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
+    <div className="bg-[#fdfbf7] p-4 rounded-xl border border-stone-200 shadow-sm hover:border-amber-700 transition-all">
       <div className="text-2xl mb-4">👁️</div>
       <h4 className="font-bold text-lg mb-2">Observabilidad</h4>
       <p className="text-sm text-stone-600">Monitorización de métricas en tiempo real con stacks de Prometheus y Grafana.</p>
@@ -194,7 +194,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
 <section id="mis proyectos" className="mb-12">
           <h3 className="text-xl font-bold text-amber-900 mb-6">Proyectos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white">
+<div className="bg-[#161b22] border border-gray-800 rounded-xl p-4 text-white">
   <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
     <div className="font-bold text-lg">Contador Web (K8s)</div>
     <div className="text-sm">Tecnologias: Kubernetes, Docker, GitHub Actions (CI/CD).</div>
@@ -203,7 +203,7 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
 </div>
         </section>
         
-        <section id="contacto" className="mb-12 p-8 text-center bg-stone-200 rounded-xl">
+        <section id="contacto" className="mb-12 p-6 text-center bg-stone-200 rounded-xl">
           <h3 className="text-xl font-bold text-stone-900 mb-4">Contacto</h3>
           <a href="mailto:veronicafdezf@gmail.com" className="text-amber-800 font-bold hover:underline">
             veronicafdezf@gmail.com
