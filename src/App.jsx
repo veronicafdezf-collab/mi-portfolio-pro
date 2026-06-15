@@ -1,8 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react'; // 1. IMPORTAR useEffect AQUÍ
 import { GitBranch, Box, ShieldCheck, Cloud } from 'lucide-react';
 
 export default function App() {
   const [lang, setLang] = useState('ES');
+  const [activeStep, setActiveStep] = useState(0); // 2. TU ESTADO
+
+  // 3. TU LÓGICA DE ANIMACIÓN
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveStep((prev) => (prev >= 3 ? 0 : prev + 1));
+    }, 1500);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#f7f4ef] text-stone-800 font-sans antialiased pb-12 pt-20">
@@ -95,7 +104,9 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
 <section id="pipeline" className="py-16 bg-[#fdfbf7] rounded-2xl p-8 mb-12 border border-stone-200">
   <div className="text-center mb-12">
     <h3 className="text-sm font-bold text-amber-800 uppercase tracking-widest mb-2">Demo Visual</h3>
-    <h2 className="text-3xl font-bold text-stone-900">Simulación del Pipeline GitOps</h2>
+    <h2 className="text-3xl font-bold text-stone-900">
+      Simulación del Pipeline GitOps {activeStep >= 3 ? "Activo" : ""}
+    </h2>
   </div>
 
   <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
@@ -104,25 +115,31 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
       { label: "Build (Docker)", icon: Box },
       { label: "Security (Secrets)", icon: ShieldCheck },
       { label: "K8s Deploy", icon: Cloud }
-    ].map((step, index, array) => {
+    ].map((step, index) => {
       const Icon = step.icon;
+      const isActive = index <= activeStep;
+      
       return (
         <div key={index} className="flex items-center">
           <div className="flex flex-col items-center">
-            <div className="w-14 h-14 rounded-xl border-2 border-amber-800 flex items-center justify-center bg-white shadow-sm hover:bg-amber-100 transition-all cursor-default">
-               <Icon className="w-6 h-6 text-amber-900" />
+            {/* Aquí cambiamos el color dinámicamente: si está activo, usamos ámbar vibrante */}
+            <div className={`w-14 h-14 rounded-xl border-2 flex items-center justify-center bg-white shadow-sm transition-all duration-500 ${isActive ? 'border-amber-600 shadow-amber-200' : 'border-stone-300'}`}>
+               <Icon className={`w-6 h-6 transition-colors duration-500 ${isActive ? 'text-amber-700' : 'text-stone-400'}`} />
             </div>
-            <span className="mt-3 text-xs font-bold text-stone-600">{step.label}</span>
+            <span className={`mt-3 text-xs font-bold transition-colors duration-500 ${isActive ? 'text-amber-800' : 'text-stone-400'}`}>
+              {step.label}
+            </span>
           </div>
 
-          {index < array.length - 1 && (
-            <div className="w-8 md:w-16 h-1 bg-stone-300 mx-2 md:mx-4 rounded-full"></div>
+          {index < 3 && (
+            <div className={`w-8 md:w-16 h-1 mx-2 md:mx-4 rounded-full transition-colors duration-500 ${activeStep > index ? 'bg-amber-600' : 'bg-stone-300'}`}></div>
           )}
         </div>
       );
     })}
   </div>
 </section>
+
 <section id="mis proyectos" className="mb-12">
           <h3 className="text-xl font-bold text-amber-900 mb-6">Proyectos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -131,7 +148,8 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
     <div className="font-bold text-lg">Contador Web (K8s)</div>
     <div className="text-sm">Tecnologias: Kubernetes, Docker, GitHub Actions (CI/CD).</div>
   </a>
-</div>          </div>
+</div>          
+</div>
         </section>
         
         <section id="contacto" className="mb-12 p-8 text-center bg-stone-200 rounded-xl">
@@ -148,4 +166,4 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
       </main>
     </div>
   );
-}
+  }
