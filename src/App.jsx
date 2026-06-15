@@ -203,87 +203,78 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
 </div>
         </section>
         
-{/* SECCIÓN PROYECTOS - CORRECCIÓN AZURE */}
-<section id="proyectos" className="py-12">
-  <h3 className="text-2xl font-bold text-stone-900 mb-8 text-center">Proyectos destacados</h3>
-  
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-    
-    {/* Tarjeta 1 - PROYECTO ACTUAL */}
-    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
-      <span className="text-[10px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded w-fit mb-4">PROFESIONAL</span>
-      <h4 className="text-lg font-bold mb-3">Contador Web (K8s)</h4>
-      <div className="flex flex-wrap gap-2 mb-4 text-[10px]">
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Kubernetes</span>
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Docker</span>
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">CI/CD</span>
-      </div>
-      <p className="text-xs text-gray-400 mb-6 leading-relaxed">
-        Despliegue y escalado de aplicación web sobre Kubernetes. Implementación de CI/CD automatizado.
-      </p>
-      
-      <div className="mt-auto">
-        <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
-        <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
-          <li>• <b>Escalabilidad:</b> Gestión de alta disponibilidad.</li>
-          <li>• <b>Automatización:</b> Flujos de trabajo eficientes.</li>
-        </ul>
-        <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">
-          GitHub
-        </a>
-      </div>
-    </div>
+{/* SECCIÓN PROYECTOS - ESTRUCTURA FINAL */}
+        <section id="proyectos" className="py-12">
+          <h3 className="text-2xl font-bold text-stone-900 mb-8 text-center">Proyectos destacados</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* Tarjeta 1 */}
+            <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
+              <span className="text-[10px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded w-fit mb-4">PROFESIONAL</span>
+              <h4 className="text-lg font-bold mb-3">Contador Web (K8s)</h4>
+              <div className="flex flex-wrap gap-2 mb-4 text-[10px]">
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Kubernetes</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Docker</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">CI/CD</span>
+              </div>
+              <p className="text-xs text-gray-400 mb-6 leading-relaxed">
+                Despliegue y escalado de aplicación web sobre Kubernetes. Implementación de CI/CD automatizado.
+              </p>
+              <div className="mt-auto">
+                <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
+                <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
+                  <li>• <b>Escalabilidad:</b> Gestión de alta disponibilidad.</li>
+                  <li>• <b>Automatización:</b> Flujos de trabajo eficientes.</li>
+                </ul>
+                <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">GitHub</a>
+              </div>
+            </div>
 
-    {/* Tarjeta 2 - ESTE PORTAFOLIO */}
-    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
-      <span className="text-[10px] bg-purple-900/50 text-purple-300 px-2 py-1 rounded w-fit mb-4">GITOPS & AUTOMATIZACIÓN</span>
-      <h4 className="text-lg font-bold mb-3">DevOps Portfolio</h4>
-      <div className="flex flex-wrap gap-2 mb-4 text-[10px]">
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">React</span>
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Tailwind</span>
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">CI/CD</span>
-      </div>
-      <p className="text-xs text-gray-400 mb-6 leading-relaxed">
-        Portafolio interactivo con pipeline simulado, desarrollado bajo buenas prácticas de GitOps.
-      </p>
-      
-      <div className="mt-auto">
-        <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
-        <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
-          <li>• <b>Pipeline:</b> Simulación visual de integración.</li>
-          <li>• <b>Calidad:</b> Estandarización de commits.</li>
-        </ul>
-        <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">
-          GitHub
-        </a>
-      </div>
-    </div>
+            {/* Tarjeta 2 */}
+            <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
+              <span className="text-[10px] bg-purple-900/50 text-purple-300 px-2 py-1 rounded w-fit mb-4">GITOPS & AUTOMATIZACIÓN</span>
+              <h4 className="text-lg font-bold mb-3">DevOps Portfolio</h4>
+              <div className="flex flex-wrap gap-2 mb-4 text-[10px]">
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">React</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Tailwind</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">CI/CD</span>
+              </div>
+              <p className="text-xs text-gray-400 mb-6 leading-relaxed">
+                Portafolio interactivo con pipeline simulado, desarrollado bajo buenas prácticas de GitOps.
+              </p>
+              <div className="mt-auto">
+                <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
+                <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
+                  <li>• <b>Pipeline:</b> Simulación visual de integración.</li>
+                  <li>• <b>Calidad:</b> Estandarización de commits.</li>
+                </ul>
+                <a href="https://github.com/veronicafdezf-collab/mi-portfolio-pro" target="_blank" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">GitHub</a>
+              </div>
+            </div>
 
-    {/* Tarjeta 3 - AZURE FOCUS */}
-    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
-      <span className="text-[10px] bg-sky-900/50 text-sky-300 px-2 py-1 rounded w-fit mb-4">AZURE CLOUD</span>
-      <h4 className="text-lg font-bold mb-3">Infraestructura Azure</h4>
-      <div className="flex gap-2 mb-4 text-[10px]">
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Azure</span>
-        <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">IaC</span>
-      </div>
-      <p className="text-xs text-gray-400 mb-6 leading-relaxed">
-        Arquitectura en Microsoft Azure diseñada para máxima escalabilidad y rendimiento con IaC.
-      </p>
-      
-      <div className="mt-auto">
-        <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
-        <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
-          <li>• <b>Cloud Native:</b> Optimización en Azure.</li>
-          <li>• <b>Inmutabilidad:</b> Despliegues declarativos.</li>
-        </ul>
-        <a href="#" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Tarjeta 3 */}
+            <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
+              <span className="text-[10px] bg-sky-900/50 text-sky-300 px-2 py-1 rounded w-fit mb-4">AZURE CLOUD</span>
+              <h4 className="text-lg font-bold mb-3">Infraestructura Azure</h4>
+              <div className="flex gap-2 mb-4 text-[10px]">
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Azure</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">IaC</span>
+              </div>
+              <p className="text-xs text-gray-400 mb-6 leading-relaxed">
+                Arquitectura en Microsoft Azure diseñada para máxima escalabilidad y rendimiento con IaC.
+              </p>
+              <div className="mt-auto">
+                <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
+                <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
+                  <li>• <b>Cloud Native:</b> Optimización en Azure.</li>
+                  <li>• <b>Inmutabilidad:</b> Despliegues declarativos.</li>
+                </ul>
+                <a href="#" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </section>
         
 <footer className="w-full text-center py-4 text-gray-500 text-xs border-t border-gray-800 mt-12">
           © {new Date().getFullYear()} Verónica.
