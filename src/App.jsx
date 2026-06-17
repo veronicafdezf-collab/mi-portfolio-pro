@@ -6,13 +6,13 @@ export default function App() {
   const [activeStep, setActiveStep] = useState(0); // 2. TU ESTADO
 
   // 3. TU LÓGICA DE ANIMACIÓN
-  useEffect(() => {
+useEffect(() => {
     const interval = setInterval(() => {
+      // Usamos el estado funcional para evitar problemas de cierre (closure)
       setActiveStep((prev) => (prev >= 3 ? 0 : prev + 1));
     }, 1500);
     return () => clearInterval(interval);
   }, []);
-
   return (
     <div className="min-h-screen bg-[#f7f4ef] text-stone-800 font-sans antialiased pb-12 pt-20">
       
