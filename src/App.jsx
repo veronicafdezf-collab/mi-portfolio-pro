@@ -195,8 +195,8 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
         <section id="proyectos" className="py-12">
           <h3 className="text-2xl font-bold text-stone-900 mb-8 text-center">Proyectos destacados</h3>
           
-<div className="grid md:grid-cols-3 gap-6">
-  </div>            
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
             {/* Tarjeta 1 */}
             <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
               <span className="text-[10px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded w-fit mb-4">PROFESIONAL</span>
@@ -260,14 +260,16 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
                 </ul>
                 <a href="#" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">GitHub</a>
               </div>
-               </div>
+            </div>
+          </div>
+        </section>
 
         {/* Tarjeta 4 */}
             <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
               <span className="text-[10px] bg-green-900/50 text-green-300 px-2 py-1 rounded w-fit mb-4">SCRIPTING & OPS</span>
               <h4 className="text-lg font-bold mb-3">Automatización con Python/Bash</h4>
               <div className="flex flex-wrap gap-2 mb-4 text-[10px]">
-                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Python</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-/d1 rounded">Python</span>
                 <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Bash</span>
                 <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Automation</span>
               </div>
@@ -304,7 +306,6 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
                 <a href="#" target="_blank" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">GitHub</a>
               </div>
             </div>
-            </section>
         
         <section id="contacto" className="mb-12 p- text-center bg-stone-200 rounded-xl">
           <h3 className="text-xl font-bold text-stone-900 mb-4">Contacto</h3>
