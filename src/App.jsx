@@ -263,6 +263,49 @@ Mi trabajo se centra en diseñar arquitecturas altamente escalables sobre Micros
             </div>
           </div>
         </section>
+
+        {/* Tarjeta 4 - Automatización */}
+            <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
+              <span className="text-[10px] bg-green-900/50 text-green-300 px-2 py-1 rounded w-fit mb-4">SCRIPTING & OPS</span>
+              <h4 className="text-lg font-bold mb-3">Automatización con Python/Bash</h4>
+              <div className="flex flex-wrap gap-2 mb-4 text-[10px]">
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Python</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Bash</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Automation</span>
+              </div>
+              <p className="text-xs text-gray-400 mb-6 leading-relaxed">
+                Desarrollo de herramientas para la gestión de logs, limpieza de snapshots y tareas de mantenimiento programadas.
+              </p>
+              <div className="mt-auto">
+                <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
+                <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
+                  <li>• <b>Eficiencia:</b> Reducción de tiempo en tareas manuales.</li>
+                  <li>• <b>Fiabilidad:</b> Eliminación de error humano en despliegues.</li>
+                </ul>
+                <a href="#" target="_blank" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">GitHub</a>
+              </div>
+            </div>
+
+            {/* Tarjeta 5 - Observabilidad */}
+            <div className="bg-[#161b22] border border-gray-800 rounded-xl p-6 text-white flex flex-col">
+              <span className="text-[10px] bg-red-900/50 text-red-300 px-2 py-1 rounded w-fit mb-4">MONITORIZACIÓN</span>
+              <h4 className="text-lg font-bold mb-3">Stack de Observabilidad</h4>
+              <div className="flex flex-wrap gap-2 mb-4 text-[10px]">
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Prometheus</span>
+                <span className="bg-gray-700/50 text-gray-300 px-2 py-1 rounded">Grafana</span>
+              </div>
+              <p className="text-xs text-gray-400 mb-6 leading-relaxed">
+                Implementación de dashboards para métricas en tiempo real, alertas de latencia y salud del clúster.
+              </p>
+              <div className="mt-auto">
+                <p className="text-xs font-bold text-amber-500 mb-2">Impacto e Ingeniería:</p>
+                <ul className="text-[10px] text-gray-400 space-y-1 mb-6">
+                  <li>• <b>Visibilidad:</b> Detección de cuellos de botella.</li>
+                  <li>• <b>Respuesta:</b> Alertas automatizadas ante incidentes.</li>
+                </ul>
+                <a href="#" target="_blank" className="flex items-center justify-center gap-2 border border-gray-700 py-2 rounded-lg text-xs hover:bg-gray-800 transition">GitHub</a>
+              </div>
+            </div>
         
         <section id="contacto" className="mb-12 p- text-center bg-stone-200 rounded-xl">
           <h3 className="text-xl font-bold text-stone-900 mb-4">Contacto</h3>
